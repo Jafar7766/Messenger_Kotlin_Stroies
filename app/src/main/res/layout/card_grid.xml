@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="13dp"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="#979691"
+    android:outlineAmbientShadowColor="@color/white"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/im_circle"
+        android:src="@drawable/pic5"
+        app:shapeAppearanceOverlay="@style/circle"
+        android:scaleType="centerCrop"
+        app:strokeWidth="0.7dp"
+        app:strokeColor="#00BCd4"
+        android:padding="7dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/im_circle2"
+        android:src="@drawable/pi"
+        app:shapeAppearanceOverlay="@style/circle"
+        android:scaleType="centerCrop"
+        android:padding="7dp"
+        android:layout_gravity="end"
+        android:layout_width="30dp"
+        android:layout_height="30dp">
+    </com.google.android.material.imageview.ShapeableImageView>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+        <ImageView
+            android:src="@drawable/user2"
+            android:backgroundTintMode="src_over"
+            android:id="@+id/icons"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="5dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_first"
+            android:text="Add To Story"
+            android:layout_below="@+id/icons"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
